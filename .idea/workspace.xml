@@ -25,8 +25,8 @@
             <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/plex-config/index.js">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="187">
-                    <caret line="11" column="60" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
+                  <state relative-caret-position="238">
+                    <caret line="14" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="70" selection-end-column="24" />
                     <folding />
                   </state>
                 </provider>
@@ -46,8 +46,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+            <state relative-caret-position="306">
+              <caret line="18" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="100" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -216,12 +216,12 @@
       <option name="presentableId" value="Default" />
       <updated>1475866580692</updated>
       <workItem from="1475866581922" duration="29127000" />
-      <workItem from="1475959246636" duration="5846000" />
+      <workItem from="1475959246636" duration="6343000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34973000" />
+    <option name="totallyTimeSpent" value="35470000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="960" height="1053" extended-state="0" />
@@ -277,18 +277,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plex-config/index.js">
+    <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="60" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
+        <state relative-caret-position="306">
+          <caret line="18" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="100" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
+    <entry file="file://$PROJECT_DIR$/plex-config/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+        <state relative-caret-position="238">
+          <caret line="14" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="70" selection-end-column="24" />
           <folding />
         </state>
       </provider>
