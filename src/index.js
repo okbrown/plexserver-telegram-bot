@@ -90,10 +90,20 @@ function sortRequestData (plexResults, fromId){
             var show = plexResults[media];
 
             var content = show.map(function (shows) {
-                return shows.grandparentTitle;
+
+                var plexContent = {
+                    title: shows.grandparentTitle,
+                    season: shows.parentIndex,
+                    episode: shows.title,
+                    enum: shows.index,
+                    summary: shows.summary
+                }
+
+                return plexContent;
+
             });
 
-            var contentList = JSON.stringify(content.splice(0,5));
+            var contentList = JSON.stringify(content.splice(0,1)); //Need to sort this out!!
         }
     }
     var plexData = [fromId, contentList];
