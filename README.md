@@ -26,3 +26,6 @@ You will obviously need the chat app (Android, iOS, Windows, and Desktop) to use
  * `gulp develop` to start in dev mode
  
  #####Thats all for now, as thats as far as I have got myself, as I still need to clean up the way telegram displays the results it gets from the PMS API.
+ 
+ #####P.S:
+ This is my <a href="https://github.com/okbrown/telegram-plexbot" target="_blank">first version</a> `https://github.com/okbrown/telegram-plexbot` done in Python from my very first github account I barely used (i prefer bitbucket because the private repositories lol) might have some useful bits in there, who knows.
