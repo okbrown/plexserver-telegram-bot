@@ -2,9 +2,9 @@
   "name": "plexbot",
   "version": "0.2.0",
   "description": "A Telegram Bot, for accessing your Plex Server API and its useful endpoints",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "start": "/index.js",
+    "start": "dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -16,5 +16,19 @@
     "API"
   ],
   "author": "Orlando Brown <iam@orlandobrown.uk>",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "event-stream": "^3.3.4",
+    "gulp-babel": "^6.1.2",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-replace": "^0.5.4",
+    "gulp-shell": "^0.5.2",
+    "run-sequence": "^1.2.2"
+  },
+  "dependencies": {
+    "node-telegram-bot-api": "^0.23.3",
+    "node-telegram-bot-api-latest": "^0.2.1",
+    "request": "^2.75.0",
+    "request-promise": "^4.1.1"
+  }
 }

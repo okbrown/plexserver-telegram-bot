@@ -1,3 +1,6 @@
 node_modules
 .DS_Store
 .idea/*
+.idea/
+dist/*
+gulpfile.js

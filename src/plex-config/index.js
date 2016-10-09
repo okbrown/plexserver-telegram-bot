@@ -1,15 +1,13 @@
 "use strict";
 
 var config = {
-    plexSettings:
-    {
-        server: "http://plexmedia-server-address-here.com",
-        token: "plex-token-here",
+    plexSettings: {
+        server: "Add Your Server Address Here",
+        token: "Add Your Token Here",
         port: ":32400",
         xTokenPlex: "?X-Plex-Token="
     },
-    plexEndPoints:
-    {   //Change these according to your current plex setup!
+    plexEndPoints: {   //Change these according to your current plex setup!
         library: "/library/sections/",
         tvShows: "1",
         movies: "2",
