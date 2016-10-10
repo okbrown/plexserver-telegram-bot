@@ -85,30 +85,31 @@ function plexGetRequest(options) {
 
 function sortRequestData (plexResults, fromId){
 
+
     for (var media in plexResults){
         if (media == '_children'){
             var show = plexResults[media];
-
             var content = show.map(function (shows) {
 
-                var plexContent = "\n"  + shows.grandparentTitle + " ";
+                if (shows.type == 'episode') {
 
-/*
-                var plexContent = {
-                    title: shows.grandparentTitle,
-                    season: shows.parentIndex,
-                    episode: shows.title,
-                    enum: shows.index,
-                    summary: shows.summary
+                    var plexContent =
+                        "\n" + shows.grandparentTitle +
+                        ", " + shows.title +
+                        " (S:" + shows.index + " E:" + shows.parentIndex + ")\n";
+
+                    return plexContent;
                 }
-*/
+                else if (shows.type == 'movie') {
 
-                return plexContent;
-
+                    var plexContent =
+                        "\n" + shows.title + "\n";
+                    return plexContent;
+                }
             });
+            
+            var contentList = content.splice(0,7).join(""); //Need to sort this out!!
 
-            var contentList = content.join(""); //Need to sort this out!!
-            console.log(typeof content);
         }
     }
     var plexData = [fromId, contentList];
