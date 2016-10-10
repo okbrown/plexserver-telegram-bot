@@ -23,7 +23,7 @@ gulp.task('build', function(callback) {
     );
 });
 
-gulp.task('es6', () => {
+gulp.task('es6', function() {
     gulp.src('src/**/*.js')
         .pipe(babel({
             ignore: 'gulpfile.js'
