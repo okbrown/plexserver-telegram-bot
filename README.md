@@ -10,7 +10,7 @@ You will obviously need the chat app (Android, iOS, Windows, and Desktop) to use
 **Personal Note:** if WhatsApp was not so 1990's when it came to messaging they would of thought about including some decent IRC, Slack, MSN style features to their app, but they didn't hence Telegram is simply the best chat app IMHO. Plus your contacts do not need to have your tel number in order for you to message you, you can use the @username option too. (BBM ¯\_(ツ)_/¯ much better privacy.)
  
  ###This project
- At the moment this is still in more of alpha state, and I have loads bits to fix and features to add, and will do so as and when I get time.
+ At the moment this is still in testing/alpha state, and I has a few bugs to fix and features to add, and will do so as and when I get time.
  
  **In the mean time here is what you need to know:**
  
@@ -27,9 +27,8 @@ You will obviously need the chat app (Android, iOS, Windows, and Desktop) to use
  * `gulp prod` to start normally
  
  ###Configuration
- * You will need to edit `plex-config/index.js` to reflect your PMS setup, e.g.your library locations and names will need to changed accordingly. See lines 11-14 and 28 - 42 to see how its done. You will need to check out http://yourPMSserverAddress:32400/library/sections to get your library number root `key`. Simply look for the root folder library name you created and then the object `key` above it.
+ * You will need to edit `plex-config/index.js` to reflect your PMS setup, e.g.your library locations and names will need to changed accordingly. See lines `11-14` and `28 - 42` to see how its done. You will need to check out http://yourPMSserverAddress:32400/library/sections to get your library number root `key`. Simply look for the root folder library name you created and then the object `key` above it.
  
- #####Thats all for now, as thats as far as I have got myself, as I still need to clean up the way telegram displays the results it gets from the PMS API.
  
  #####P.S:
  This is my <a href="https://github.com/okbrown/telegram-plexbot" target="_blank">first version</a> `https://github.com/okbrown/telegram-plexbot` done in Python from my very first github account I barely used (i prefer bitbucket because the private repositories lol) might have some useful bits in there, who knows.
