@@ -6,7 +6,7 @@ var config = require('./plex-config');
 
 //Telegram
 var telegramBot = require('node-telegram-bot-api-latest');
-var token = "Add Your Token Here";
+var token = "119356191:AAFEnNma8Ik5YyaAWfarCbMX2dS7LhTkChk";
 var plexBot = new telegramBot(token, {polling: true});
 var reg = /\/\w+|\w+/;
 
@@ -91,6 +91,9 @@ function sortRequestData (plexResults, fromId){
 
             var content = show.map(function (shows) {
 
+                var plexContent = "\n"  + shows.grandparentTitle + " ";
+
+/*
                 var plexContent = {
                     title: shows.grandparentTitle,
                     season: shows.parentIndex,
@@ -98,12 +101,14 @@ function sortRequestData (plexResults, fromId){
                     enum: shows.index,
                     summary: shows.summary
                 }
+*/
 
                 return plexContent;
 
             });
 
-            var contentList = JSON.stringify(content.splice(0,1)); //Need to sort this out!!
+            var contentList = content.join(""); //Need to sort this out!!
+            console.log(typeof content);
         }
     }
     var plexData = [fromId, contentList];
