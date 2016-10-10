@@ -26,6 +26,9 @@ You will obviously need the chat app (Android, iOS, Windows, and Desktop) to use
  * `gulp develop` to start in dev mode
  * `gulp prod` to start normally
  
+ ###Configuration
+ * You will need to edit `plex-config/index.js` to reflect your PMS setup, e.g.your library locations and names will need to changed accordingly. See lines 11-14 and 28 - 42 to see how its done. You will need to check out http://yourPMSserverAddress:32400/library/sections to get your library number root `key`. Simply look for the root folder library name you created and then the object `key` above it.
+ 
  #####Thats all for now, as thats as far as I have got myself, as I still need to clean up the way telegram displays the results it gets from the PMS API.
  
  #####P.S:
