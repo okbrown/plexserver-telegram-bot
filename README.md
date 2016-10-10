@@ -16,7 +16,7 @@ You will obviously need the chat app (Android, iOS, Windows, and Desktop) to use
  **In the mean time here is what you need to know:**
  
  * Still need to add group chat and reply, just found out I didn't add it - Updated: (10/10/16)
- Will go through the documentation this week and which method provides that.
+ Will go through the documentation this week and see which method provides that.
  
  * The `gulpfile-git.js` that you see is to be renamed to just `gulpfile.js` the reason for this is because I use a different gulpfile that has a few more tasks I need to removes my `plex server address` and `tokens` from the project (rather than remember to delete it each time, i just run a gulp task) before I push it to github. If you need a copy of that task file let me know in case your interested.
  
