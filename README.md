@@ -24,6 +24,7 @@ You will obviously need the chat app (Android, iOS, Windows, and Desktop) to use
  * `git clone https://github.com/okbrown/plexserver-telegram-bot` target="_blank">repo</a>
  * `npm install or npm i` (which ever you prefer)
  * `gulp develop` to start in dev mode
+ * `npm start` to start normally
  
  #####Thats all for now, as thats as far as I have got myself, as I still need to clean up the way telegram displays the results it gets from the PMS API.
  

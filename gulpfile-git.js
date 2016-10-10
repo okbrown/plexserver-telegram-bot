@@ -16,6 +16,16 @@ gulp.task('develop', function() {
     );
 });
 
+gulp.task('prod', function() {
+    runSequence(
+        'build',
+        'pro-server'
+
+    );
+});
+
+
+
 gulp.task('build', function(callback) {
     runSequence(
         ['es6'],
@@ -33,6 +43,18 @@ gulp.task('es6', function() {
 
 gulp.task('dev-server', function() {
     gulp.watch(srcDir + '**/*.js', ['es6']);
+
+    nodemon({
+        script: 'dist/index.js',
+        ext: 'js'
+    })
+        .on('restart', function() {
+            console.log('Restarting Node...');
+        });
+});
+
+
+gulp.task('prod-server', function() {
 
     nodemon({
         script: 'dist/index.js',
