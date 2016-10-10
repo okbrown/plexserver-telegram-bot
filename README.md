@@ -1,4 +1,5 @@
 #PlexBot
+######Plex Media Server Telegram Bot
 
 #####Provide your leechers with some helpful info on what content has been recently added to your Plex Media Server.
 
