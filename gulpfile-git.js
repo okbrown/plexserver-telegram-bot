@@ -9,7 +9,7 @@ var es = require('event-stream');
 var buildDir = 'dist/';
 var srcDir = 'src/';
 
-gulp.task('develop', function () {
+gulp.task('develop', function() {
     runSequence(
         'build',
         'dev-server'
@@ -38,7 +38,7 @@ gulp.task('dev-server', function() {
         script: 'dist/index.js',
         ext: 'js'
     })
-        .on('restart', function () {
+        .on('restart', function() {
             console.log('Restarting Node...');
         });
 });
