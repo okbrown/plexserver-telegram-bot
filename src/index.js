@@ -73,8 +73,11 @@ function plexGetRequest(options) {
 
             var fromId = plexData[0];
             var message = plexData[1];
+            var format = {
+                "parse_mode": "HTML"
+            }
 
-            plexBot.sendMessage(fromId, message);
+            plexBot.sendMessage(fromId, message, format);
         })
         .catch(function (err) {
             console.log("PLEX API ERROR: ", err);
@@ -82,10 +85,11 @@ function plexGetRequest(options) {
         });
 };
 
-function sortRequestData (plexResults, fromId){
+function sortRequestData (plexResults, fromId) {
 
     for (var media in plexResults){
-        if (media == '_children'){
+        
+        if (media == '_children') {
             var show = plexResults[media];
             var content = show.map(function (shows) {
 
@@ -93,13 +97,16 @@ function sortRequestData (plexResults, fromId){
 
                 if (shows.type == 'episode') {
 
-                    plexContent = "\n" + shows.grandparentTitle + ", " + shows.title + " (S:" + shows.index + " E:" + shows.parentIndex + ")\n";
+                    plexContent =
+                        "\n" + "<b>" + shows.grandparentTitle + "</b>" +
+                        ", \n" + shows.title + "\n(S:" + shows.index +
+                        " E:" + shows.parentIndex + ")\n";
 
                     return plexContent;
                 }
                 else if (shows.type == 'movie') {
 
-                    plexContent = "\n" + shows.title + "\n";
+                    plexContent = "\n"+ "<b>" + shows.title + "</b>" + "\nStudio: " + shows.studio + "\nRating: " + shows.rating + "\n";
                     return plexContent;
                 }
             });
