@@ -32,7 +32,6 @@ You will obviously need the chat app (Android, iOS, Windows, and Desktop) to use
  
  ###Configuration
  * You will need to edit `plex-config/index.js` to reflect your PMS setup, e.g.your library locations and names will need to changed accordingly. See lines `11-14`and `28 - 42` (<a href="https://github.com/okbrown/plexserver-telegram-bot/blob/master/src/plex-config/index.js#L11-L42" target="_blank">view here</a>) to see how its done. You will need to check out http://yourPMSserverAddress:32400/library/sections to get your library number root `key`. Simply look for the root folder library name you created and then the object `key` above it.
- 
- 
+  
  #####P.S:
  This is my <a href="https://github.com/okbrown/telegram-plexbot" target="_blank">first version</a> `https://github.com/okbrown/telegram-plexbot` done in Python from my very first github account I barely used (i prefer bitbucket because the private repositories lol) might have some useful bits in there, who knows.
