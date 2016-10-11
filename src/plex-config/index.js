@@ -27,13 +27,13 @@ var config = {
             case "/tv":
                 uri.push(config.plexEndPoints.library);
                 uri.push(config.plexEndPoints.tvShows);
-                uri.push(config.plexEndPoints.newest);
+                uri.push(config.plexEndPoints.recentlyAdded);
                 break;
 
             case "/movies":
                 uri.push(config.plexEndPoints.library);
                 uri.push(config.plexEndPoints.movies);
-                uri.push(config.plexEndPoints.newest);
+                uri.push(config.plexEndPoints.recentlyAdded);
                 break;
 
             case "/anime":

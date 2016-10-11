@@ -13,7 +13,7 @@ var reg = /\/\w+|\w+/;
 plexBot.onText(reg, function (msg, match) {
 
     var plexObj = {
-        fromId: msg.from.id,
+        fromId: msg.chat.id,
         cmd: match[0]
     }
 
@@ -57,7 +57,6 @@ function plexRequestMatch (plexObj) {
 
 function getEndPoint(plexObj) {
     var options = config.createEndPointOptions(plexObj);
-    console.log(options);
     return options;
 };
 
@@ -105,7 +104,7 @@ function sortRequestData (plexResults, fromId){
                 }
             });
 
-            var contentList = content.splice(0,7).join("");
+            var contentList = content.splice(0,10).join("");
         }
     }
     var plexData = [fromId, contentList];
