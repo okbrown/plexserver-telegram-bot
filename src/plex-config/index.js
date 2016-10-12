@@ -3,7 +3,7 @@
 var config = {
     plexSettings: {
         server: "Add Your Server Address Here",
-        token: "EGPAxj86H18p8e4qwi67",
+        token: "Add Your Token Here",
         port: ":32400",
         xTokenPlex: "?X-Plex-Token="
     },
