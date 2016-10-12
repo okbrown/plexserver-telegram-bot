@@ -6,7 +6,7 @@ var config = require('./plex-config');
 
 //Telegram
 var telegramBot = require('node-telegram-bot-api-latest');
-var token = "119356191:AAFEnNma8Ik5YyaAWfarCbMX2dS7LhTkChk";
+var token = "";
 var plexBot = new telegramBot(token, {polling: true});
 var reg = /\/\w+|\w+/;
 
