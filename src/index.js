@@ -5,9 +5,20 @@ var plexRequestCall = require('request-promise');
 var config = require('./plex-config');
 
 //Telegram
-var telegramBot = require('node-telegram-bot-api-latest');
+var telegramBot = require('node-telegram-bot-api');
 var token = "Add Your Token Here";
-var plexBot = new telegramBot(token, {polling: true});
+var plexBot = new telegramBot(token, {polling: {interval: 2000, timeout: 10}});
+
+/*var hookOpt = {
+    webHook: {
+        port: 443,
+        key: __dirname + '/key.pem',
+        cert: __dirname + '/crt.pem'
+    }
+};
+
+console.log(hookOpt.webHook.key);*/
+
 var reg = /\/\w+|\w+/;
 
 plexBot.onText(reg, function (msg, match) {
