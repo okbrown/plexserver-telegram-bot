@@ -2,8 +2,8 @@
 
 var config = {
     plexSettings: {
-        server: "Add Your Server Address Here",
-        token: "Add Your Token Here",
+        server: "http://brownsmart.asuscomm.com",
+        token: "NZWyF5A6MdEn3zVEVhp2",
         port: ":32400",
         xTokenPlex: "?X-Plex-Token="
     },
